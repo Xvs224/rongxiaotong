@@ -1,0 +1,41 @@
+
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a,
+.gold {
+  text-decoration: none;
+  color: #070000;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* 全局滚动条暖色调 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff8f1;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d97706, #c2410c);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f59e0b, #ea580c);
+}
+
+/* 暖色文字选中 */
+::selection {
+  background: #fde68a;
+  color: #7c2d12;
+}
